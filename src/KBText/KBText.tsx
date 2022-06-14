@@ -6,8 +6,7 @@ import {
   TextStyle,
   StyleProp,
 } from 'react-native';
-import { lightColors } from '../helper/colors';
-import normalize from '../helper/normalizeText';
+import { patchWebProps, lightColors, normalizeText } from '../helper';
 
 export interface TextProps extends TextProperties {
   /**  Add additional styling for Text. */
@@ -67,12 +66,12 @@ export const KBText: React.FunctionComponent<TextProps> = ({
         },
         style,
         (h1 || h2 || h3 || h4) && (styles.bold as TextStyle),
-        h1 && StyleSheet.flatten([{ fontSize: normalize(40) }, h1Style]),
-        h2 && StyleSheet.flatten([{ fontSize: normalize(34) }, h2Style]),
-        h3 && StyleSheet.flatten([{ fontSize: normalize(28) }, h3Style]),
-        h4 && StyleSheet.flatten([{ fontSize: normalize(22) }, h4Style]),
+        h1 && StyleSheet.flatten([{ fontSize: normalizeText(40) }, h1Style]),
+        h2 && StyleSheet.flatten([{ fontSize: normalizeText(34) }, h2Style]),
+        h3 && StyleSheet.flatten([{ fontSize: normalizeText(28) }, h3Style]),
+        h4 && StyleSheet.flatten([{ fontSize: normalizeText(22) }, h4Style]),
       ])}
-      {...rest}
+      {...patchWebProps(rest)}
     >
       {children}
     </NativeText>
