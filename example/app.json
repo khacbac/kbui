@@ -1,0 +1,22 @@
+{
+  "name": "react-native-kbui-example",
+  "displayName": "Kbui Example",
+  "expo": {
+    "name": "react-native-kbui-example",
+    "slug": "react-native-kbui-example",
+    "description": "Example app for react-native-kbui",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
