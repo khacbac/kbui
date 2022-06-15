@@ -23,6 +23,7 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "types": ["styled-components-react-native"]
-  }
+    "types": ["jest", "styled-components-react-native"]
+  },
+  "include": ["src/**/*", "__tests__/*"]
 }
