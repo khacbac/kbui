@@ -1,6 +1,6 @@
 {
   "name": "react-native-kbui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ui base",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
