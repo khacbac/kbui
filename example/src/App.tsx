@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { Text } from 'react-native';
-import { multiply, KBText, KBContainer } from 'react-native-kbui';
+import { Text, View } from 'react-native';
+import { multiply, KBText } from 'react-native-kbui';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
@@ -11,9 +11,9 @@ export default function App() {
   }, []);
 
   return (
-    <KBContainer>
+    <View>
       <Text>Result: {result}</Text>
       <KBText>adadad</KBText>
-    </KBContainer>
+    </View>
   );
 }

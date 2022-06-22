@@ -4,3 +4,4 @@ export function multiply(a: number, b: number): Promise<number> {
 
 export * from './KBText';
 export * from './KBView';
+export * from './KBFlatList';
